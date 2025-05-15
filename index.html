@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Онлайн-магазин академической литературы о КНДР: политика, культура, история, художественные книги.">
-    <meta name="keywords" content="КНДР, книги, политика, история, литература, культура, Северная Корея, академические издания">
+    <meta name="description"
+        content="Онлайн-магазин академической литературы о КНДР: политика, культура, история, художественные книги.">
+    <meta name="keywords"
+        content="КНДР, книги, политика, история, литература, культура, Северная Корея, академические издания">
     <meta name="author" content="Корейская Литература">
     <title>Корейская литература | Онлайн-магазин</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css&quot; integrity="sha512-oZLq9gQntgGv9CIaGzZf3oAfUMo4OyVk1eYBqGDRS0IoO2CGvBx3+MC8Gy0iYvcoUyz/7cPlTNR2DB2wxU9Vxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script defer src="scripts/scripts.js"></script>
+    <script defer src="scripts/cart.js"></script>
+    <script defer src="scripts/search.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css&quot; crossorigin=" anonymous"
+        referrerpolicy="no-referrer" />
 </head>
-<body>
-    <div id="popup">
-        <div id="popup-content">
-            <p>Сайт посвящён академическому изучению литературы Азии.</p>
-            <button onclick="closePopup()">Понятно</button>
-        </div>
-    </div>
 
+<body>
     <header class="main-header">
         <div class="container header-wrapper">
             <div class="logo">
-                <a href="#"><strong>Корейская Литература</strong></a>
+                <a href="index.html"><strong>Корейская Литература</strong></a>
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#politics">Политика</a></li>
-                    <li><a href="#history">История</a></li>
-                    <li><a href="#fiction">Художественная</a></li>
+                    <li><a href="politics.html">Политика</a></li>
+                    <li><a href="history.html">История</a></li>
+                    <li><a href="fiction.html">Художественная</a></li>
                     <li><a href="#blog">Блог</a></li>
                     <li><a href="#articles">Статьи</a></li>
                 </ul>
@@ -41,6 +44,7 @@
                 <div class="burger" onclick="toggleMenu()">
                     <span></span><span></span><span></span>
                 </div>
+                <div class="close-burger" onclick="toggleMenu()">✕</div>
             </nav>
         </div>
     </header>
@@ -87,12 +91,14 @@
         <section id="blog" class="blog">
             <div class="container">
                 <h2>Блог</h2>
-                <article><h3>Культурное наследие КНДР</h3>
+                <article>
+                    <h3><a href="blog/cultural-heritage.html">Культурное наследие КНДР</a></h3>
                     <p>Исследование традиций и обычаев северокорейского общества на фоне литературы.</p>
                 </article>
                 <article>
-                    <h3>Почему стоит читать Хан Сория</h3>
-                    <p>Обзор произведений одного из ключевых авторов КНДР и их влияние на современное восприятие культуры.</p>
+                    <h3><a href="blog/han-soriya.html">Почему стоит читать Хан Сория</a></h3>
+                    <p>Обзор произведений одного из ключевых авторов КНДР и их влияние на современное восприятие
+                        культуры.</p>
                 </article>
             </div>
         </section>
@@ -101,11 +107,11 @@
             <div class="container">
                 <h2>Статьи</h2>
                 <article>
-                    <h3>История северокорейской литературы</h3>
+                    <h3><a href="articles/history-literature.html">История северокорейской литературы</a></h3>
                     <p>От идеологического воспитания до культурного отражения эпохи.</p>
                 </article>
                 <article>
-                    <h3>Образ КНДР в зарубежной литературе</h3>
+                    <h3><a href="articles/foreign-literature.html">Образ КНДР в зарубежной литературе</a></h3>
                     <p>Сравнительный анализ взглядов с Запада на литературу и политику Кореи.</p>
                 </article>
             </div>
@@ -114,10 +120,10 @@
 
     <section class="social">
         <div class="container">
-            <a href="https://t.me/share/url?url=https://yourdomain.ru&quot; target="_blank">
+            <a href="https://t.me/share/url?url=https://yourdomain.ru&quot; target=" _blank">
                 <i class="fab fa-telegram fa-2x"></i> Telegram
             </a>
-            <a href="https://vk.com/share.php?url=https://yourdomain.ru&quot; target="_blank">
+            <a href="https://vk.com/share.php?url=https://yourdomain.ru&quot; target=" _blank">
                 <i class="fab fa-vk fa-2x"></i> ВКонтакте
             </a>
         </div>
@@ -128,16 +134,17 @@
             <div>
                 <h4>О магазине</h4>
                 <ul>
-                    <li><a href="#about">О проекте</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
                 </ul>
             </div>
             <div>
                 <h4>Категории</h4>
                 <ul>
-                    <li><a href="#catalog">Политика</a></li>
-                    <li><a href="#catalog">История</a></li>
-                    <li><a href="#catalog">Художественная литература</a></li>
+                    <li><a href="politics.html">Политика</a></li>
+                    <li><a href="history.html">История</a></li>
+                    <li><a href="fiction.html">Художественная</a></li>
                 </ul>
             </div>
             <div>
@@ -155,7 +162,6 @@
             <p>Здесь будет показан фрагмент книги (демо).</p>
         </div>
     </div>
-
-    <script src="scripts/scripts.js"></script>
 </body>
+
 </html>
