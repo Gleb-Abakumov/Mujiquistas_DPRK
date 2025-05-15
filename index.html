@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Онлайн-магазин академической литературы о КНДР: политика, культура, история, художественные книги.">
+    <meta name="keywords" content="КНДР, книги, политика, история, литература, культура, Северная Корея, академические издания">
+    <meta name="author" content="Корейская Литература">
+    <title>Корейская литература | Онлайн-магазин</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css&quot; integrity="sha512-oZLq9gQntgGv9CIaGzZf3oAfUMo4OyVk1eYBqGDRS0IoO2CGvBx3+MC8Gy0iYvcoUyz/7cPlTNR2DB2wxU9Vxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="popup">
+        <div id="popup-content">
+            <p>Сайт посвящён академическому изучению литературы Азии.</p>
+            <button onclick="closePopup()">Понятно</button>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-wrapper">
+            <div class="logo">
+                <a href="#"><strong>Корейская Литература</strong></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#politics">Политика</a></li>
+                    <li><a href="#history">История</a></li>
+                    <li><a href="#fiction">Художественная</a></li>
+                    <li><a href="#blog">Блог</a></li>
+                    <li><a href="#articles">Статьи</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a class="login-btn" href="login.html">Войти</a>
+                    <a href="checkout.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </div>
+                <div class="burger" onclick="toggleMenu()">
+                    <span></span><span></span><span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Академический онлайн-магазин книг о КНДР</h2>
+                <p>Политика, история и культура Корейской Народно-Демократической Республики</p>
+            </div>
+        </section>
+
+        <section id="catalog" class="catalog-section">
+            <div class="container">
+                <input type="text" id="searchInput" placeholder="Поиск по названию...">
+                <div class="tabs">
+                    <button onclick="navigateGenre('Политика')">Политика</button>
+                    <button onclick="navigateGenre('История')">История</button>
+                    <button onclick="navigateGenre('Художественная литература')">Художественная</button>
+                </div>
+                <div class="filters">
+                    <label for="author">Автор:</label>
+                    <select id="author">
+                        <option>Все</option>
+                        <option>Ли Ги Ён</option>
+                        <option>Хан Сория</option>
+                    </select>
+
+                    <label for="sort">Сортировать:</label>
+                    <select id="sort">
+                        <option value="title">По названию</option>
+                        <option value="price">По цене</option>
+                        <option value="year">По дате</option>
+                        <option value="rating">По рейтингу</option>
+                    </select>
+                </div>
+
+                <div class="book-grid">
+                    <!-- Книги добавляются скриптом -->
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2>Блог</h2>
+                <article><h3>Культурное наследие КНДР</h3>
+                    <p>Исследование традиций и обычаев северокорейского общества на фоне литературы.</p>
+                </article>
+                <article>
+                    <h3>Почему стоит читать Хан Сория</h3>
+                    <p>Обзор произведений одного из ключевых авторов КНДР и их влияние на современное восприятие культуры.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="articles" class="articles">
+            <div class="container">
+                <h2>Статьи</h2>
+                <article>
+                    <h3>История северокорейской литературы</h3>
+                    <p>От идеологического воспитания до культурного отражения эпохи.</p>
+                </article>
+                <article>
+                    <h3>Образ КНДР в зарубежной литературе</h3>
+                    <p>Сравнительный анализ взглядов с Запада на литературу и политику Кореи.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <section class="social">
+        <div class="container">
+            <a href="https://t.me/share/url?url=https://yourdomain.ru&quot; target="_blank">
+                <i class="fab fa-telegram fa-2x"></i> Telegram
+            </a>
+            <a href="https://vk.com/share.php?url=https://yourdomain.ru&quot; target="_blank">
+                <i class="fab fa-vk fa-2x"></i> ВКонтакте
+            </a>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>О магазине</h4>
+                <ul>
+                    <li><a href="#about">О проекте</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Категории</h4>
+                <ul>
+                    <li><a href="#catalog">Политика</a></li>
+                    <li><a href="#catalog">История</a></li>
+                    <li><a href="#catalog">Художественная литература</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <p>Email: info@koreabooks.ru</p>
+                <p>Тел: +7 (000) 000-00-00</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+            <h3>Фрагмент книги</h3>
+            <p>Здесь будет показан фрагмент книги (демо).</p>
+        </div>
+    </div>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
